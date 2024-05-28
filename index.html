@@ -1,0 +1,187 @@
+<!--Declara ao navegador que odocumentoédo tipo html-->
+<!DOCTYPE html>
+
+<!--Este elemento define o início do documento HTML e especifica o idioma principal da página como português Brasil-->
+<html lang="pt-br"><!-- TAG de abertura html -->
+
+    <!--Esta seção contém metadados e informações sobre o documento HTML, que não são diretamente visíveis na página web.-->
+    <head><!-- TAG de abertura head -->
+
+            <!--Define o conjunto de caracteres utilizado no documento como UTF-8, que dá suporte para representar corretamente caracteres especiais e internacionais.-->
+            <meta charset="UTF-8">
+
+            <!--Configura a escala inicial e o comportamento de largura para dispositivos móveis, permitindo que a página se adapte de maneira responsiva a diferentes tamanhos de tela.-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <!--  Define o título da página, que é exibido na barra de título do navegador. Neste caso, o título padrão é "Document", mas deve ser substituído por um título mais descritivo que represente o conteúdo da página.-->
+            <title>ESTRUTURA HTML</title>
+
+        <!--Conectando o CSS ao HTML-->
+        <link rel="stylesheet" href="style.css">
+
+    </head><!-- TAG de fechamento head -->
+
+    <!-- Início da seção principal do documento (corpo da página) -->
+    <body> <!-- TAG de abertura body -->
+        <nav id="primeiroCodigo">
+            <ul>
+                <li><a href="#titulo">Títulos</a></li>
+                <li><a href="#links">Links</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#tabelas">Tabelas</a></li>
+                <li><a href="#imagens">Imagens</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#audios">Audios</a></li>
+            </ul>
+        </nav>
+        <section id="titulo">
+            <h1>TAGS DE TÍTULO</h1>
+
+            <p>As TAGS do tipo H são TAGS de título, e o número que a acompanha indica a sua hierarquia.
+            </p>
+            <table id="tagh">
+                <tr id="cabecalho"><!--Linha 1-->
+                    <td>
+                        TAG
+                    </td> 
+                    <td>
+                        Estilo do texto
+                    </td>
+                </tr>
+                <tr><!--Linha 2-->
+                    <td>
+                        <p>h1:</p>
+                    </td> 
+                    <td>
+                        <h1> Esta é a configuração de texto para a TAG h1</h1>
+                    </td>
+                </tr>
+                <tr><!--Linha 3-->
+                    <td>
+                        <p>h2:</p>
+                    </td> 
+                    <td>
+                        <h2>Esta é a configuração de texto para a TAG h2</h2>
+                    </td>
+                </tr>
+                <tr><!--Linha 4-->
+                    <td>
+                        <p>h3:</p>
+                    </td> 
+                    <td>
+                        <h3>Esta é a configuração de texto para a TAG h3</h3>
+                    </td>
+                </tr>
+                <tr><!--Linha 5-->
+                    <td>
+                        <p>h4:</p>
+                    </td> 
+                    <td>
+                        <h4>Esta é a configuração de texto para a TAG h4</h4>
+                    </td>
+                </tr>
+                <tr><!--Linha 6-->
+                    <td>
+                        <p>h5:</p>
+                    </td> 
+                    <td>
+                        <h5>Esta é a configuração de texto para a TAG h5</h5>
+                    </td>
+                </tr>
+                <tr><!--Linha 7-->
+                    <td>
+                        <p>h6:</p>
+                    </td> 
+                    <td>
+                        <h6>Esta é a configuração de texto para a TAG h5</h6>
+                    </td>
+                </tr>
+        </table>
+        <h1>TAG DE PARÁGRAFO</h1>
+            <p> Também temos a TAG p, que é utilizada para quando precisamos escrever parágrafos.</p>
+        </section>
+        <hr><!--Insere uma linha-->
+        <section id="links">
+            <h1>Inserindo links</h1>
+            <p>Vamos criar um link para que o nosso usuário conheça o SENAI. O comando para criarmos um link é a TAG a. Se definirmos a target como: 
+                _blank: abre a página em uma nova janela/aba;
+                _self: abre a página na mesma janela;
+                _parent: abre a página na mesma janela do link;</p>
+            <a href="https://sp.senai.br/cursos?unidade=569" target="_blank">Conheça o SENAI Paulinia</a>
+        </section>
+        <hr><!--Insere uma linha-->
+        <section id="listas">
+            <h1>Listas</h1>
+            <p> Para criar a lista usamos a TAG ul, para criar os itens da lista utilizamos a TAG li. Fui me matricular no SENAI e precisei levar:</p>
+            <ul>
+                <li>RG</li>
+                <li>Comprovante de Endereço</li>
+                <li>CPF</li>
+                <li>Comprovante de Escolaridade</li>
+            </ul>
+            <p> Para criar uma lista numerada, eu utilizo a TAG ol e para criar os elementos utilizo a TAG li.Estão matriculados comigo na turma meus amigos:
+            </p>
+            <ol>
+                <li>Maria</li>
+                <li>João</li>
+                <li>Lanza</li>
+                <li>Ana</li>                
+            </ol>
+        </section>
+        <hr><!--Insere uma linha-->
+        <section id="tabelas">
+            <h1>Tabelas</h1>
+            <p>A tabela é uma estrutura composta de linhas e colunas, com inúmeras possibilidades de formatação. Para construir uma tabela usamos a TAG table, para construir uma linha usamos a TAG tr, e para criar uma coluna usamos a TAG td.</p>
+            <table>
+                <tr id="cabecalho"><!--Primeira linha-->
+                    <td>Curso</td><!--Primeira coluna-->
+                    <td>Turno</td><!--Segunda coluna-->
+                </tr>
+                <tr><!--Segunda linha-->
+                    <td>Desenvolvimento JS</td><!--Primeira coluna-->
+                    <td>Manhã</td><!--Segunda coluna-->
+                </tr>
+                <tr><!--Terceira linha-->
+                    <td>Microsoft AI-900</td><!--Primeira coluna-->
+                    <td>Tarde</td><!--Segunda coluna-->
+                </tr>
+                <tr><!--Quarta linha-->
+                    <td>Programação Oracle JAVA</td><!--Primeira coluna-->
+                    <td>Tarde</td><!--Segunda coluna-->
+                </tr>
+            </table>
+        </section>
+        <hr><!--Insere uma linha-->
+        <section id="imagens">
+            <h1> Imagem </h1>
+            <p>É comum querermos ou precisarmos inserir imagens na nossa página web. Isto deixa o seu site mais atraente e se você está desenvolvendo uma loja virtual isso é essencial.Para isso utilizamos a TAG img</p>
+            <img src="https://cronos-media.sesisenaisp.org.br//api/media/1-0/files?img=img_1_230824_71d370d1-e6d4-4d79-8cb0-5e30a1d7cb75_o.jpeg&tipo=g" alt="Imagem SENAI Paulinia">
+            <br>
+            <br>
+            <img src="senai.jpg" alt="Um homem no laboratório do SENAI">
+        </section>
+        <hr><!--Insere uma linha-->
+        <section id="videos">
+            <h1>Vídeos</h1>
+            <p>Hoje os vídeos são um ótimo recurso visual, quase todos os sites necessitam desse recurso, seja para uma vídeo aula, seja para a demosntração de um serviço. Podemos inserir um vídeo em nossa web página por meio da TAG video: </p>
+
+            <h1>Conheça o SENAI</h1>
+            <iframe  width="560" height="315" src="https://www.youtube.com/embed/m6NUngOFUoQ?si=Q6A1ytO5Tsv3DDBR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <br>
+            <video id="vid" src="senai.mp4" controls></video>
+       </section>
+       <hr><!--Insere uma linha-->
+        <section id="audios">
+            <h1>Áudios</h1>
+            <br>
+            <br>
+            <p>Para incorporar os arquivos de áudio 
+                em nossa página web utilizamos a TAG audio:
+            </p>
+            <audio src="smoke.mp3" controls autoplay>Exemplo de Áudio</audio>
+        </section>
+   
+    </body><!-- TAG de fechamento body -->
+
+</html><!-- TAG de fechamento html -->
